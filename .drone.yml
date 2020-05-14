@@ -2,7 +2,6 @@ kind: pipeline
 name: drone-test-app 
 steps:
   - name: drone-test-app
-    image: openjdk:11-jdk
     when:
       branch:
         - master
