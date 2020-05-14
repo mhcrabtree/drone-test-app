@@ -3,7 +3,8 @@ name: drone-test-app
 steps:
   - name: drone-test-app
     image: openjdk:11-jdk
+    when:
+      branch:
+        - master
     commands:
-      yum install htop -y
-      yum install nmap -y
-      yum install dos2unix -y
+      sbt clean compile dist
