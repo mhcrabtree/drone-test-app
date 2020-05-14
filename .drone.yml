@@ -7,4 +7,4 @@ steps:
       branch:
         - master
     commands:
-      sbt clean compile dist
+      - sbt clean compile dist
