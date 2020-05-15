@@ -2,7 +2,7 @@ kind: pipeline
 name: drone-test-app 
 steps:
   - name: drone-test-app
-    image: mhcrabtree/11-jdk-sbt:latest
+    image: mhcrabtree/11-jdk-sbt:1.0
     when:
       branch:
         - master
